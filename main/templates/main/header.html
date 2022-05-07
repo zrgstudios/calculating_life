@@ -3,13 +3,24 @@
 <head>
     {% load static %}
     <link href="{% static 'tinymce/css/prism.css' %}" rel="stylesheet">
-    <!-- Compiled and minified CSS -->
+
+    <!-- using css from website -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
+
+    <!-- using css in our file folder -->
     <link href="{% static 'main/css/materialize.css' %}" rel="stylesheet">
 
-    <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <meta charset="UTF-8">
     <title>Title</title>
+
+    <!-- modify without having to do annoying file stuff. Probably not best way. -->
+    <style>
+        nav {
+            background-color: powderblue;
+        }
+    </style>
+
 </head>
 <body>
     <script src="{% static 'tinymce/js/prism.js' %}"></script>
