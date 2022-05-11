@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+{% extends "main/header.html" %}
+<html lang="en">
+<head>
+    {% load static %}
+</head>
+<body>
+    <script src="{% static 'tinymce/js/prism.js' %}"></script>
+
+    {% block content %}
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+
+        <button class="btn" style="background-color: powderblue; color: blue;" type="submit">Login</button>
+    </form>
+
+    If you don't already have an account, <a href="/login"><strong>register</strong></a> for one instead.
+    {% endblock %}
+
+</body>
+</html>
