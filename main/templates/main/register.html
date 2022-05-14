@@ -5,8 +5,6 @@
     {% load static %}
 </head>
 <body>
-    <script src="{% static 'tinymce/js/prism.js' %}"></script>
-
     {% block content %}
     <form method="POST">
         {% csrf_token %}
@@ -17,6 +15,5 @@
 
     If you already have an account, <a href="/login"><strong>login</strong></a> instead.
     {% endblock %}
-
 </body>
 </html>
